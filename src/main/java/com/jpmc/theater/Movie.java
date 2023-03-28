@@ -1,11 +1,7 @@
 package com.jpmc.theater;
 
 import java.time.Duration;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.chrono.ChronoLocalDateTime;
-import java.util.Arrays;
 import java.util.Objects;
 
 public class Movie {
@@ -17,8 +13,9 @@ public class Movie {
     private double ticketPrice;
     private int specialCode;
 
-    public Movie(String title, Duration runningTime, double ticketPrice, int specialCode) {
+    public Movie(String title, String description, Duration runningTime, double ticketPrice, int specialCode) {
         this.title = title;
+        this.description = description;
         this.runningTime = runningTime;
         this.ticketPrice = ticketPrice;
         this.specialCode = specialCode;
